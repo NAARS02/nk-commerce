@@ -45,4 +45,3 @@ export const profileNavItems = [
 ]
 
 export const noHeaderFooterUrls = ['/create-account', '/login', '/recover-password']
-
