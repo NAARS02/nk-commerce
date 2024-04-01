@@ -1,8 +1,8 @@
-import type { Field } from 'payload/types';
-import richText from './richText';
-import label from './richText/label';
-import largeBody from './richText/largeBody';
-import linkGroup from './linkGroup';
+import type { Field } from 'payload/types'
+import richText from './richText'
+import label from './richText/label'
+import largeBody from './richText/largeBody'
+import linkGroup from './linkGroup'
 
 export const hero: Field = {
   name: 'hero',
@@ -55,7 +55,8 @@ export const hero: Field = {
       relationTo: 'media',
       required: true,
       admin: {
-        condition: (_, { type } = {}) => ['highImpact', 'mediumImpact', 'customHero'].includes(type),
+        condition: (_, { type } = {}) =>
+          ['highImpact', 'mediumImpact', 'customHero'].includes(type),  
       },
     },
   ],
